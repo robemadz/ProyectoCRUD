@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>crudProyecto</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <section class="principalSection">
+      <h2>Añadir comentario</h2>
+      <form class="commentsForm">
+        <label for="user">User</label>
+        <input type="text" name="user" placeholder="usuario" required />
+        <label for="comment">Comentario</label>
+        <textarea
+          name="comment"
+          cols="40"
+          rows="4"
+          placeholder="escribe tu comentario de mierda"
+          required
+        ></textarea>
+        <input type="submit" value="enviar comentario" />
+        <input type="hidden" name="id" />
+      </form>
+
+      <section class="timeLine">
+        <h2>Tu feed</h2>
+        <div class="feedTweets"></div>
+      </section>
+    </section>
+    <template id="tweetStructure">
+      <article class="tweet">
+        <div class="tweet__wrapper">
+          <img src="" alt="avatar" class="tweet__wrapper__avatar" />
+          <span class="tweet__wrapper__user"></span>
+        </div>
+        <p class="tweet__comment"></p>
+        <div class="buttonsWrapper">
+          <button class="tweet__editButton">Editar</button>
+          <button class="tweet__deleteButton">Borrar</button>
+        </div>
+      </article>
+    </template>
+    <template id="editForm">
+      <form class="editTweets">
+        <label for="user">User</label>
+        <input type="text" name="user" placeholder="usuario" required />
+        <label for="comment">Comentario</label>
+        <textarea
+          name="comment"
+          cols="40"
+          rows="4"
+          placeholder="escribe tu comentario de mierda"
+          required
+        ></textarea>
+        <input type="submit" value="enviar comentario" />
+        <input type="hidden" name="id" />
+      </form>
+    </template>
+    <script src="assets/index.js"></script>
+  </body>
+</html>

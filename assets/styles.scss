@@ -1,0 +1,195 @@
+/******-----RESET CSS-----******/
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/******-----MIS ESTILOS-----******/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #eeeeee;
+  font-family: sans-serif;
+
+  & .principalSection {
+    max-width: 1200px;
+
+    margin: 4rem auto;
+
+    & h2 {
+      font-size: 2rem;
+      text-align: center;
+      font-family: sans-serif;
+      margin: 2rem 0;
+      color: #262626;
+    }
+
+    & .commentsForm {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+
+      & * {
+        display: block;
+        margin: 1rem 0;
+        padding: 0.7rem 0.5rem;
+        border: none;
+        border-radius: 4px;
+      }
+
+      & label {
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        color: #262626;
+      }
+
+      & input[type="submit"] {
+        width: 20vw;
+        background-color: lightgreen;
+        color: #262626;
+        border-radius: 20px;
+        border: 1px solid #262626;
+        margin: 2rem auto;
+        &:hover {
+          filter: contrast(1.5);
+        }
+      }
+    }
+
+    & .timeLine {
+      max-width: 1000px;
+      margin: 0 auto;
+
+      & .feedTweets {
+        background-color: #fafafa;
+        padding: 1rem;
+        & .tweet {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: nowrap;
+          margin: 1rem;
+          background-color: rgb(235, 235, 235);
+          padding: 1rem;
+          border-radius: 4px;
+
+          &__wrapper {
+            width: 80px;
+            &__avatar {
+              display: block;
+              border-radius: 50%;
+              width: 100%;
+              object-fit: contain;
+            }
+            &__user {
+              display: block;
+              text-align: center;
+              font-weight: 500;
+              margin-top: 0.5rem;
+            }
+          }
+
+          &__comment {
+            padding: 1rem;
+          }
+
+          & .buttonsWrapper button {
+            color: #262626;
+            border-radius: 10px;
+            border: 1px solid #262626;
+            padding: 0.4rem 0.8rem;
+            margin: 0.5rem;
+
+            &:hover {
+              filter: contrast(1.5);
+            }
+          }
+          &__editButton {
+            background-color: lightblue;
+          }
+
+          &__deleteButton {
+            background-color: lightcoral;
+          }
+        }
+      }
+    }
+  }
+}

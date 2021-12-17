@@ -1,0 +1,22 @@
+{
+  "tweets": [
+    {
+      "id": 1,
+      "user": "Perico",
+      "tweet": "La generación de cristal. A doblar el lomo os ponía yo, PROGRES",
+      "image": "https://i.pravatar.cc/80"
+    },
+    {
+      "id": 2,
+      "user": "Manolo",
+      "tweet": "Yo no soy racista, pero...",
+      "image": "https://i.pravatar.cc/80"
+    },
+    {
+      "id": 3,
+      "user": "Jose Manuel",
+      "tweet": "Pues debería existir también el día del hombre",
+      "image": "https://i.pravatar.cc/80"
+    }
+  ]
+}

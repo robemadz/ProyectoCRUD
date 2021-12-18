@@ -9,7 +9,7 @@
   </head>
   <body>
     <section class="principalSection">
-      <h2>Añadir comentario</h2>
+      <h2 class="title">Añadir comentario</h2>
       <form class="commentsForm">
         <label for="user">User</label>
         <input type="text" name="user" placeholder="usuario" required />
@@ -43,22 +43,7 @@
         </div>
       </article>
     </template>
-    <template id="editForm">
-      <form class="editTweets">
-        <label for="user">User</label>
-        <input type="text" name="user" placeholder="usuario" required />
-        <label for="comment">Comentario</label>
-        <textarea
-          name="comment"
-          cols="40"
-          rows="4"
-          placeholder="escribe tu comentario de mierda"
-          required
-        ></textarea>
-        <input type="submit" value="enviar comentario" />
-        <input type="hidden" name="id" />
-      </form>
-    </template>
+
     <script src="assets/index.js"></script>
   </body>
 </html>

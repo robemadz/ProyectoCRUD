@@ -133,6 +133,13 @@ body {
       }
     }
 
+    & .errorMsg {
+      color: crimson;
+      text-align: center;
+      transition: all 0.5s ease;
+      text-transform: uppercase;
+    }
+
     & .timeLine {
       max-width: 1000px;
       margin: 0 auto;
